@@ -134,7 +134,7 @@ services:
     mem_limit: 8G
     cpus: 6
     deploy:
-      replicas: 6
+      repliccc: 6
     depends_on:
       #- db
       - rabbitmq
@@ -300,7 +300,7 @@ services:
       - /etc/ssl:/etc/ssl
       - /tmp/pki:/etc/pki
     deploy:
-      replicas: 5
+      repliccc: 5
     networks:
       network:
         aliases:
@@ -314,7 +314,7 @@ services:
     mem_reservation: 4G
     cpus: 8
     deploy:
-      replicas: 6
+      repliccc: 6
     networks:
       network:
         aliases:
